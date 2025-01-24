@@ -62,14 +62,16 @@ function NavBar() {
           />
         )}
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav mr-auto" onClick={handleNavClick}>
+          {/* REMOVE THE BELOW COMMENT FOR CATEGORIES */}
+          {/* <Nav className="nav mr-auto" onClick={handleNavClick}>
             {navs.map((navItem) => (
               <LinkContainer to={navItem.page} key={uuidv4()}>
                 <Nav.Link className="nav-item">{navItem.nav}</Nav.Link>
               </LinkContainer>
             ))}
-          </Nav>
-          <Form className="search-form" onSubmit={handleSubmit}>
+          </Nav> */}
+          {/* REMOVE THIS BELOW FOR SEARCH TAB */}
+          {/* <Form className="search-form" onSubmit={handleSubmit}>
             <FormControl
               type="text"
               placeholder="Explore news..."
@@ -84,7 +86,7 @@ function NavBar() {
             >
               Search
             </Button>
-          </Form>
+          </Form> */}
         </Navbar.Collapse>
       </Navbar>
     </>
